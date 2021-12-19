@@ -8,24 +8,30 @@ import { FaCartPlus } from "react-icons/fa";
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:7000/services')
+        fetch('https://fierce-tor-64547.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
             .catch((e) => { })
     }, []);
     const { isLoading } = useAuth();
-    if (isLoading) {
-        return (
-            <div className="d-flex justify-content-center align-items-start">
-                <div className="d-flex justify-content-center spinner-grow text-success" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        )
-    }
+    // if (isLoading) {
+    //     return (
+    //         <div className="d-flex justify-content-center align-items-start">
+    //             <div className="d-flex justify-content-center spinner-grow text-success" role="status">
+    //                 <span className="visually-hidden">Loading...</span>
+    //             </div>
+    //         </div>
+    //     )
+    // }
     return (
         <div>
             <div className="container my-5">
+                {
+                    isLoading &&
+                    <div className="spinner-grow text-success" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                }
                 <h2 className="mb-3 fw-bolder">Services</h2>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {

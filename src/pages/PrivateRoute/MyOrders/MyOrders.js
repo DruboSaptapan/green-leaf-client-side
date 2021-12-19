@@ -5,12 +5,12 @@ import useAuth from '../../../Hooks/useAuth'
 
 const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
 
     const email = user.email;
 
     useEffect(() => {
-        axios.post("https://floating-brook-78748.herokuapp.com/orders/email", { email: `${email}` })
+        axios.post("https://fierce-tor-64547.herokuapp.com/services/orders/email", { email: `${email}` })
             .then(res => setMyOrders(res.data));
     }, [email])
 
@@ -26,7 +26,7 @@ const MyOrders = () => {
             confirmButtonText: 'Confirm'
         }).then((result) => {
             if (result.isConfirmed) {
-                const url = `http://localhost:7000/orders/${id}`;
+                const url = `https://fierce-tor-64547.herokuapp.com/orders/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })
@@ -47,6 +47,12 @@ const MyOrders = () => {
     }
     return (
         <div>
+            {
+                isLoading &&
+                <div className="spinner-grow text-success" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            }
             <div className="container">
                 <h2 className="mt-5 mb-3 text-center">My Orders</h2>
                 {/* <h4>{user.displayName}</h4> */}

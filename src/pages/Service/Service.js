@@ -11,14 +11,14 @@
 //     // const { user } = useAuth();
 
 //     useEffect(() => {
-//         fetch(`http://localhost:7000/services/${serviceId}`)
+//         fetch(`http://https://fierce-tor-64547.herokuapp.com/services/${serviceId}`)
 //             .then(res => res.json())
 //             .then(data => setService(data))
 //             .catch((e) => { })
 //     }, [serviceId])
 
 //     const onSubmit = data => {
-//         fetch('http://localhost:7000/orders', {
+//         fetch('http://https://fierce-tor-64547.herokuapp.com/orders', {
 //             method: 'POST',
 //             headers: {
 //                 'content-type': 'application/json'

@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import useAuth from '../../../Hooks/useAuth'
+import loginImg from './login.png'
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -33,13 +34,14 @@ const Login = () => {
         <div>
             <div className="container">
                 {
-                    isLoading && <div className="spinner-grow text-success" role="status">
+                    isLoading &&
+                    <div className="spinner-grow text-success" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
                 }
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        {/* <img src={loginImg} alt="" className="img-fluid" /> */}
+                        <img src={loginImg} alt="" className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <div className="mx-auto my-5 border-radius custom-shadow">

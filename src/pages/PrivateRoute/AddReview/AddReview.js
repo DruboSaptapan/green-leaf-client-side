@@ -11,7 +11,7 @@ const AddReview = () => {
     const onSubmit = data => {
         data.photoUrl = `${user.photoURL}`
         data.email = `${user.email}`
-        axios.post('http://localhost:7000/reviews', data)
+        axios.post('https://fierce-tor-64547.herokuapp.com/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     toast.success('Successfully review added!', {
