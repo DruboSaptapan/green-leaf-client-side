@@ -92,7 +92,7 @@ const Register = () => {
                                     <label htmlFor="floatingPassword">Confirm Password</label>
                                 </div>
                                 <button type="submit" className="btn bg-color-sm px-5 text-light my-3" style={{backgroundColor: '#1eb12f'}}>Register</button>
-                                <p className="pb-4">Already have an account? <Link to="/login" className="text-decoration-none text-color fw-bold">Login</Link></p>
+                                <p className="pb-4">Already have an account? <Link to="/login" className="text-decoration-none fw-bold" style={{color: 'rgb(30, 177, 47)'}}>Login</Link></p>
                                 {
                                     isLoading && <div className="spinner-grow text-success" role="status">
                                         <span className="visually-hidden">Loading...</span>

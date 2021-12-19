@@ -5,7 +5,7 @@ const Cart = () => {
     const { isLoading } = useAuth();
     return (
 
-        <div>
+        <div className='mt-3 mb-5'>
             <h2>You have no orders</h2>
             {
                 isLoading &&

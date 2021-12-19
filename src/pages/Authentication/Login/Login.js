@@ -106,7 +106,7 @@ const Login = () => {
                                 }
                                 <button type="submit" className="btn bg-color-sm px-5 text-light my-3" style={{backgroundColor: '#1eb12f'}}><span className="ms-2">Login</span></button>
                             </form>
-                            <p className="pb-4">New user? <Link to="/register" className="text-decoration-none fw-bold" style={{ color: '#9282f2' }}>Register</Link></p>
+                            <p className="pb-4">New user? <Link to="/register" className="text-decoration-none fw-bold" style={{ color: 'rgb(30, 177, 47)' }}>Register</Link></p>
                         </div>
                     </div>
                 </div>
