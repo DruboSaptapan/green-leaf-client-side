@@ -62,10 +62,10 @@ const Navigation = () => {
                             <li className="nav-item">
                                 {
                                     user?.email ?
-                                        <button className="btn" style={{backgroundColor: 'rgb(30, 177, 47)'}} onClick={logOut}>Log Out</button>
+                                        <button className="btn" style={{backgroundColor: 'rgb(30, 177, 47)', color: '#fff'}} onClick={logOut}>Log Out</button>
                                         :
                                         <NavLink to="/login">
-                                            <button className="btn" style={{backgroundColor: 'rgb(30, 177, 47)'}}>Log in</button>
+                                            <button className="btn" style={{backgroundColor: 'rgb(30, 177, 47)', color: '#fff'}}>Log in</button>
                                         </NavLink>
                                 }
                             </li>

@@ -3,7 +3,7 @@ import './JoinNow.css'
 
 const JoinNow = () => {
     return (
-        <div>
+        <div className='container mt-5'>
             <div className="newsletter-box bg-green ptb-100">
                 <div className="container mt-5">
                     <div className="row">
