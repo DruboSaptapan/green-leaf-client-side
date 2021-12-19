@@ -1,0 +1,32 @@
+[
+    {
+        "serviceTitle": "Roof Garden",
+        "serviceImage": "https://i.postimg.cc/v8SMP2PR/roof-gardening.png",
+        "description": "The related idea of a living machine is based on the most basic cycle of gardening: using wastes (organic waste and sewage), appropriately broken down, usually in some specialized container, on the soil, and harvesting food which, when processed, generates"
+    },
+    {
+        "serviceTitle": "Soil Testing",
+        "serviceImage": "https://i.postimg.cc/c4gWP7jv/soil-test.png",
+        "description": "Soil chemistry changes over time, as biological and which chemical processes break down or combine compounds over time. These processes change once the soil is removed from its natural ecosystem (flora and fauna that penetrate the sampled area) and environment (temperature, moisture, and solar light/radiation cycles)."
+    },
+    {
+        "serviceTitle": "Outdoor Garden",
+        "serviceImage": "https://i.postimg.cc/XqhbpXZN/outdoor-garden.png",
+        "description": "A garden is a planned space, usually outdoors, set aside for the cultivation, display, and enjoyment of plants and other forms of nature. The most common form today is a residential or public garden, but the term garden has traditionally been a more general one."
+    },
+    {
+        "serviceTitle": "Watering Garden",
+        "serviceImage": "https://i.postimg.cc/nzFZWybx/watering-garden.png",
+        "description": "Water doesn’t disappear, and new water can’t be created. It simply changes form and location. We can’t use our planet’s water supply up, yet there has never been a time in history when some area of the planet wasn’t experiencing severe drought."
+    },
+    {
+        "serviceTitle": "Weed Control",
+        "serviceImage": "https://i.postimg.cc/sXTyCTsh/weed-control.png",
+        "description": "Weeds compete with crops for space, nutrients, water and light. Smaller, slower growing seedlings are more susceptible than those that are larger and more vigorous. Onions are one of the most vulnerable, because they are slow to germinate and produce slender, upright stems. By contrast broad beans produce large seedlings and suffer far fewer effects other than during periods of water shortage at the crucial time when the pods are filling out. Transplanted crops raised in sterile soil or potting compost gain a head start over germinating weeds."
+    },
+    {
+        "serviceTitle": "Hedge Trimming",
+        "serviceImage": "https://i.postimg.cc/XqXWj9YD/hedge.png",
+        "description": "Manual hedge trimmers (sometimes also called hedge shears or hedge clippers) are designed as large scissors or large pruning shears. They do not need anything to operate and are cheapest/most environmentally friendly."
+    }
+]

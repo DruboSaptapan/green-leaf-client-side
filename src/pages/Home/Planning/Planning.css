@@ -1,0 +1,37 @@
+.pricing-table {
+    background: #fff;
+    margin: 0 0 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+    box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+}
+.pricing-table .pricing-header {
+    padding: 30px 30px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+}
+.pricing-table .pricing-features .pricing-header-tag {
+    position: absolute;
+    top: -138px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    text-align: center;
+    background: #f6f3ec;
+    z-index: 9;
+}
+.pricing-table.style1 .pricing-header {
+    background: #faab34;
+}
+.pricing-table .purchase-pricing {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.pricing-table .pricing-features {
+    margin: 85px 20px 35px;
+    position: relative;
+}
