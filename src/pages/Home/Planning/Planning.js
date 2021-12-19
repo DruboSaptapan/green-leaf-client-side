@@ -7,7 +7,7 @@ import { ImCross } from "react-icons/im";
 const Planning = () => {
     return (
         <div>
-            <div className="container mt-5 mb-5 pt-5 pb-3">
+            <div className="container my-5 pt-5 pb-3">
                 <h2 className='mb-4 fw-bolder'>Price planning</h2>
                 <div className="row">
                     <div className="col-xl-4 col-lg-6 col-md-6 mt-2 mt-lg-0">
@@ -25,7 +25,9 @@ const Planning = () => {
                                         <li className="list-group-item border border-0"><ImCross className='text-danger me-2' />Tree Replacement </li>
                                     </ul>
                                 </div>
-                                <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
+                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -45,7 +47,9 @@ const Planning = () => {
                                         <li className="list-group-item border border-0"><ImCross className='text-danger me-2' />Tree Disease Diagnosis</li>
                                     </ul>
                                 </div>
-                                <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
+                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -65,7 +69,9 @@ const Planning = () => {
                                         <li className="list-group-item border border-0"><ImCheckmark className='text-success me-2' />Tree Disease Diagnosis</li>
                                     </ul>
                                 </div>
-                                <Link to="./" className="card-link mt-3" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
+                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                </button>
                             </div>
                         </div>
                     </div>

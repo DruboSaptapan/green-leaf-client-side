@@ -45,7 +45,7 @@ const Register = () => {
                             <h4 className="pt-4">Create an Account</h4>
                             <p><small>use social account to create an account</small></p>
                             <div>
-                                <button type="submit" onClick={handleGoogleSignIn} className="btn btn-google text-light me-2" style={{ backgroundColor: '#13b878' }}>Google login</button>
+                                <button type="submit" onClick={handleGoogleSignIn} className="btn btn-google text-light me-2" style={{ backgroundColor: '#1eb12f' }}>Google login</button>
                             </div>
                             <form onSubmit={handleRegistrationSubmit} className="w-75 mx-auto mt-3">
                                 <p><small>or use your email account</small></p>
@@ -91,7 +91,7 @@ const Register = () => {
                                         required />
                                     <label htmlFor="floatingPassword">Confirm Password</label>
                                 </div>
-                                <button type="submit" className="btn btn-primary bg-color-sm px-5 text-light my-3">Register</button>
+                                <button type="submit" className="btn bg-color-sm px-5 text-light my-3" style={{backgroundColor: '#1eb12f'}}>Register</button>
                                 <p className="pb-4">Already have an account? <Link to="/login" className="text-decoration-none text-color fw-bold">Login</Link></p>
                                 {
                                     isLoading && <div className="spinner-grow text-success" role="status">

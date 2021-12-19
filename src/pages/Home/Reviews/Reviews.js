@@ -76,7 +76,7 @@ const Reviews = (props) => {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container mb-5 mt-3">
       <h2 className="mt-5 mb-3">Testimonials</h2>
       <Slider {...settings}>
         {

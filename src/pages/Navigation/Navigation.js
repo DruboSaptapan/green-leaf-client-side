@@ -9,7 +9,7 @@ const Navigation = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light pt-3">
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">
                         <img src={logo} alt="" width={'30px'} /> Green Leaf

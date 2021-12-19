@@ -6,6 +6,7 @@ import ShowMoreText from "react-show-more-text";
 import { FaCartPlus } from "react-icons/fa";
 
 const Services = () => {
+    const { isLoading } = useAuth();
     const [services, setServices] = useState([])
     useEffect(() => {
         fetch('https://fierce-tor-64547.herokuapp.com/services')
@@ -13,16 +14,6 @@ const Services = () => {
             .then(data => setServices(data))
             .catch((e) => { })
     }, []);
-    const { isLoading } = useAuth();
-    // if (isLoading) {
-    //     return (
-    //         <div className="d-flex justify-content-center align-items-start">
-    //             <div className="d-flex justify-content-center spinner-grow text-success" role="status">
-    //                 <span className="visually-hidden">Loading...</span>
-    //             </div>
-    //         </div>
-    //     )
-    // }
     return (
         <div>
             <div className="container my-5">
@@ -32,7 +23,7 @@ const Services = () => {
                         <span className="visually-hidden">Loading...</span>
                     </div>
                 }
-                <h2 className="mb-3 fw-bolder">Services</h2>
+                <h2 className="mb-5 fw-bolder">Our wonderful services</h2>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         services.map(service =>
@@ -44,12 +35,11 @@ const Services = () => {
                                                 <img src={service.serviceImage} alt="service-icon" className='img-fluid' style={{ borderRadius: '12px' }} />
                                             </div>
                                             <div className="col-9">
-                                                <h5 className="card-title mb-0 text-start fw-lighter" style={{ lineHeight: '32px', fontWeight: 600 }}>{service.serviceTitle}</h5>
+                                                <h4 className="card-title mb-0 text-start" style={{ lineHeight: '32px', fontWeight: 500, }}>{service.serviceTitle}</h4>
                                             </div>
 
                                         </div>
                                         <div className="fw-light">
-                                            {/* <p className="text-start" style={{ fontSize: '16px' }}>{service.description}</p> */}
                                             <ShowMoreText
                                                 lines={3}
                                                 more='Read more'
@@ -61,7 +51,7 @@ const Services = () => {
                                             >
                                                 <p>{service.description}</p>
                                             </ShowMoreText>
-                                            <button className="btn btn-success btn-sm"><FaCartPlus /> Add to cart</button>
+                                            <button className="btn btn-sm text-light" style={{backgroundColor: '#1eb12f'}}><FaCartPlus /> Add to cart</button>
                                         </div>
                                     </div>
                                 </div>

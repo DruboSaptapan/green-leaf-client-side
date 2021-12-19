@@ -7,7 +7,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className="footer pb-5">
+        <div className="footer pb-5 bg-light">
             <div className="container mt-5 pt-5 pb-3">
                 <div>
                     <div className="row">
@@ -43,7 +43,7 @@ const Footer = () => {
                             <li className="text-start mb-1">Make a reservation</li>
                             <li className="text-start mt-1 mb-2" style={{ lineHeight: 1.6 }}>Our team is always available 24/7 to answer your queries</li>
                             <li className="text-start mt-1">
-                                <button className="rounded-pill btn btn-footer" type="tel">+8801322810867</button>
+                                <button className="rounded-pill btn btn-footer" type="tel" style={{backgroundColor: '#1eb12f'}}>+8801322810867</button>
                             </li>
                         </ul>
                     </div>

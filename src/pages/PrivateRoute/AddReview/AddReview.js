@@ -57,7 +57,7 @@ const AddReview = () => {
                     </div>
 
                     <span className="w-50 mx-auto" style={{ display: "block" }}>
-                        <input type="submit" className="btn btn-primary text-light w-100 text-center" value="Review" />
+                        <button className="btn text-light w-100 text-center" style={{color: 'black', backgroundColor: '#1eb12f', 'outline': 'none'}}>Review</button>
                     </span>
                     <ToastContainer
                         position="top-right"
@@ -77,39 +77,3 @@ const AddReview = () => {
 };
 
 export default AddReview;
-
-
-// import React from 'react';
-// import axios from 'axios';
-// import { useForm } from "react-hook-form";
-// import './AddRating.css';
-// import useAuth from '../../hooks/useAuth';
-// const AddRating = () => {
-//     const { register, handleSubmit, reset } = useForm();
-//     const { user } = useAuth();
-//     const onSubmit = data => {
-//         data.photoUrl = `${user.photoURL}`
-//         axios.post('https://rocky-harbor-58240.herokuapp.com/rating', data)
-//             .then(res => {
-//                 if (res.data.insertedId) {
-//                     alert('added successfully');
-
-//                     reset();
-//                 }
-//             })
-//     };
-//     return (
-//         <div className="addservice">
-//             <h2>Add Services</h2>
-//             <form onSubmit={handleSubmit(onSubmit)}>
-//                 <input {...register("name")} placeholder="name" required />
-//                 <textarea {...register("description")} placeholder="Description" required />
-//                 <input type="number" {...register("rating", { min: 1, max: 5 })} placeholder="please Rating 1-5" required />
-
-//                 <input type="submit" />
-//             </form>
-//         </div >
-//     );
-// };
-
-// export default AddRating;
