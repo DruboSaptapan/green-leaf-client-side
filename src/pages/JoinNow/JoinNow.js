@@ -4,8 +4,8 @@ import './JoinNow.css'
 const JoinNow = () => {
     return (
         <div>
-            <div className="container mt-5">
-                <div className="newsletter-box bg-green ptb-100">
+            <div className="newsletter-box bg-green ptb-100">
+                <div className="container mt-5">
                     <div className="row">
                         <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                             <div className="content-title style1 text-center mb-25">
