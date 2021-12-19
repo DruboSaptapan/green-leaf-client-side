@@ -28,12 +28,6 @@ const Navigation = () => {
                             {
                                 user?.email &&
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/myorders">My orders</NavLink>
-                                </li>
-                            }
-                            {
-                                user?.email &&
-                                <li className="nav-item">
                                     <NavLink className="nav-link" to="/addreview">Add review</NavLink>
                                 </li>
                             }

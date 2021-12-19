@@ -11,7 +11,7 @@ import Services from './pages/Services/Services';
 import AuthProvider from './Context/AuthProvider'
 import AddReview from './pages/PrivateRoute/AddReview/AddReview';
 import Cart from './pages/PrivateRoute/Cart/Cart';
-import MyOrders from './pages/PrivateRoute/MyOrders/MyOrders';
+// import MyOrders from './pages/PrivateRoute/MyOrders/MyOrders';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute'
 
 function App() {
@@ -36,12 +36,12 @@ function App() {
                   <Cart/>
                 </PrivateRoute>}>
             </Route>
-            <Route path="/myorders"
+            {/* <Route path="/myorders"
               element={
                 <PrivateRoute>
                   <MyOrders />
                 </PrivateRoute>}>
-            </Route>
+            </Route> */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<NotFound />} />
