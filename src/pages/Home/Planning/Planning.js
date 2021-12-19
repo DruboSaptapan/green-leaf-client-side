@@ -26,7 +26,7 @@ const Planning = () => {
                                     </ul>
                                 </div>
                                 <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
-                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                    <Link to="./" className="card-link" style={{ color: '#fff', textDecoration: 'none' }}>Buy plan</Link>
                                 </button>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Planning = () => {
                                     </ul>
                                 </div>
                                 <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
-                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                    <Link to="./" className="card-link" style={{ color: '#fff', textDecoration: 'none' }}>Buy plan</Link>
                                 </button>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const Planning = () => {
                                     </ul>
                                 </div>
                                 <button className="btn" style={{ backgroundColor: '#1eb12f' }}>
-                                    <Link to="./" className="card-link" style={{ color: '#000', textDecoration: 'none' }}>Buy plan</Link>
+                                    <Link to="./" className="card-link" style={{ color: '#fff', textDecoration: 'none' }}>Buy plan</Link>
                                 </button>
                             </div>
                         </div>
